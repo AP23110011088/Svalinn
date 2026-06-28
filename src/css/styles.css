@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    width: 400px;
+    background-image: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #150b0b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 1.6;
+    border-radius: 12px;
+    }
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading img{
+    width: 15%;
+    padding-right: 5px;
+  }
+    
+    h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    }
+  
+    form {
+      display: flex;
+      font-weight: bold;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.2); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    form input[type="url"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      outline:#524949;
+      border-radius: 5px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      color: #333;
+    }
+  
+    form input[type="url"]:focus {
+      outline:#0f0e0e;
+      box-shadow: 0 0 5px rgba(12, 12, 12, 0.8);
+    }
+    
+  
+    form button[type="submit"] {
+    width: 100%; 
+    padding: 10px 15px; 
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 122, 255, 0.2);
+}
+
+form button[type="submit"]:hover {
+    background-color: #005ecb;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 11px rgba(0, 122, 255, 0.25); 
+}
+
+form button[type="submit"]:active {
+    transform: translateY(0);
+    background-color: #004a9e;
+    box-shadow: 0 2px 5px rgba(0, 122, 255, 0.2);
+}
+
+  
+    #show-locked {
+      padding: 10px 15px;
+      margin-top: 20px;
+      background: #df0850; 
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+  
+    #show-locked:hover {
+      background: #6b0627;
+    }
+  
+    #locked-sites-list {
+      margin-top: 20px;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.2); 
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    #locked-sites-list h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #151515;
+    }
+  
+    #locked-sites {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #locked-sites li {
+      margin: 5px 0;
+      color: #0f0e0e;
+      font-size: 1rem;
+    }
+  
+    #status {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ffcccb; 
+      text-align: center;
+    }
+  
+    button {
+      width: 90%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #0056b3;
+    }
+  
+    #locked-sites-list {
+      margin-top: 20px;
+    }
+  
+    label {
+      font-size: large;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    li {
+      padding: 5px;
+    }
+
+.profile-icon-link {
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  margin-left: 60px;
+  width: 95%;
+  min-width: 60px;
+  max-width: 80px;
+  height: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-icon-link:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1) drop-shadow(0 4px 12px rgba(0, 123, 255, 0.934));
+}
+
+.profile-icon-link:active {
+  transform: scale(1.05);
+  filter: brightness(0.95);
+}
+
+.profile-icon {
+  cursor: pointer;
+  width: 100%;
+  min-width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.profile-icon-link:hover .profile-icon {
+  transform: translateY(-2px);
+}
+
